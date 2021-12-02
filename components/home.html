@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+               .lbl {
+float: left;
+margin-right: 1em;
+}
+    </style>
+</head>
+
+<body  >
+    
+<label class="switch lbl" >
+     
+    <input type="checkbox" name="theme" id="darkBtn" class="checkDark" >
+    <span class="slider round"></span>
+    <br>
+
+  </label>
+  
+ 
+  
+    <header class="masthead clear">
+        <div class="centered">
+
+            <div class="site-branding"><img src="../resources/purple-brandmark-600x164.png" alt="quizizz">
+            </div>
+        </div>
+    </header>
+
+    <main class="main-area">
+        <div class="centered">
+            <section class="cards">
+
+
+
+                <div class="card">
+                    <a id="0" href="../components/quiz.html" onclick="getQuizId(this.id)">
+                        <figure class="thumbnail">
+                            <img src="../resources/chem.jpg" alt="science">
+                        </figure>
+
+                        <div class="card-content" style="background-color: rgb(254, 217, 147);">
+                            <h2>Science</h2>
+                            <p>Science quiz consists of 10 questions about science .</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a id="1" href="../components/quiz.html" onclick="getQuizId(this.id)">
+                        <figure class="thumbnail">
+                            <img src="../resources/mt.jpg" alt="science">
+                        </figure>
+                        <div class="card-content" style="background-color: rgb(206, 225, 136);">
+                            <h2>Maths</h2>
+                            <p>Maths quiz consists of 10 questions of maths problems.</p>
+                        </div>
+
+                    </a>
+                </div>
+
+
+
+                <div class="card">
+                    <a id="2" href="../components/quiz.html" onclick="getQuizId(this.id)">
+                        <figure class="thumbnail">
+                            <img src="../resources/en.jpg" alt="science">
+                        </figure>
+                        <div class="card-content" style="background-color: rgb(250, 242, 141);">
+                            <h2>Grammer</h2>
+                            <p>Grammer quiz consists of 10 questions of english grammer.</p>
+                        </div>
+                    </a>
+                </div>
+
+
+            </section>
+
+        </div>
+
+        <script src="../javaScript/quizJS.js"></script>
+       
+        <link rel="stylesheet" href="../style/home.css">
+
+    </main>
+
+</body>
+
+
+</html>

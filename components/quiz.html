@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/quizStyle.css">
+    <title>Quiz</title>
+    <style>
+        .lbl {
+float: left;
+margin-right: 1em;
+}.myButton {
+	box-shadow:inset 0px 1px 0px 0px #dcecfb;
+	background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+	background-color:#bddbfa;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:15px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+	background-color:#80b5ea;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+        
+
+        
+    </style>
+</head>
+<body onload="generateQest()">
+
+    <label class="switch lbl" >
+         
+        <input type="checkbox" name="theme" id="darkBtn" class="checkDark" >
+        <span class="slider round"></span>
+        <br>
+    
+      </label>
+      
+    <header >
+        <a href="../components/home.html"> <img src="../resources/purple-brandmark-600x164.png" alt="quizizz" >
+     </a> 
+    </header>
+    <hr>
+    <div>
+        <h3 id="question"></h3>
+        <div id="answers">
+
+        </div>
+        
+        
+    </div>
+    <input type="button" id="submit" class="myButton" value="next" onclick="nextGenerateQest()">
+    
+    <script src="../javaScript/quizJS.js"></script>
+    
+    
+    
+    
+</body>
+</html>
